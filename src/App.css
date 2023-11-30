@@ -1,9 +1,10 @@
 .App {
-  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -14,18 +15,68 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: flex-start; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Container{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-div{
+  margin: 5px;
+}
+
+.input-add{
+  border-radius: 5px;
+  height: 30px;
+  width:250px;
+}
+
+.add-btn{
+  background-color: blueviolet;
+  color: "white";
+  border-radius: 5px;
+  margin-left: 5px;
+  height: 35px;
+  width:70px;
+}
+
+.list > ul > li{
+  margin-top: 8px;
+  margin-right: 35px;
+  background-color: rgb(195, 190, 190);
+  color: black;
+  width: 330px;
+  height: 35px;
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+}
+
+.list ul{
+  list-style-type: none;
+}
+
+.del-btn{
+  background-color: red;
+  color: "white";
+  border-radius: 5px;
+  /* margin-left: 5px; */
+  height: 35px;
+  width:70px;
 }
 
 @keyframes App-logo-spin {
